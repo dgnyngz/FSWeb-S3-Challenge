@@ -262,6 +262,7 @@ footer {
   display: flex;
   justify-content: start;
   gap: 10%;
+  height: 20%;
 }
 .foo {
   display: flex;
@@ -288,18 +289,42 @@ button {
 }
 
 /* mobile media query */
-@media (max-width: 428px) {
+@media screen and (max-width: 428px) {
   /* header section */
-  .header-title {
-    width: 75%;
-    margin: 0 auto;
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+  .asd {
+    flex-direction: column;
     text-align: center;
-    font-size: 4rem;
   }
 
   /* menu */
   .menu {
     background-image: none;
+    background-color: rgb(225, 239, 230);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
+  .menu-container {
+    width: 100%;
+    text-align: center;
+  }
+  .menu-section {
+    width: 100%;
+    text-align: center;
+    margin: 5%;
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+  }
+  .menu-item1 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
   }
 
   /* footer section */
@@ -307,5 +332,29 @@ button {
     height: auto;
     padding-top: 2.5vh;
     font-size: 2rem;
+    width: 100%;
+    margin-right: 20%;
+  }
+  .foo {
+    display: flex;
+    flex-direction: column;
+  }
+  .footermenu {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .copy {
+    margin-right: 5%;
+  }
+  .mail {
+    text-align: center;
+    width: 90%;
+  }
+  button {
+    width: 20%;
+  }
+  h2 {
+    border-style: dashed;
   }
 }
